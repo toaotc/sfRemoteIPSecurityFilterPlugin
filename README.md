@@ -15,9 +15,9 @@ This plugin adds remote IP-filtering to symfony's security context.
 ## Configuration
 
 ### Enable the plugin
-``` php
-// config/ProjectConfiguration.class.php
+> config/ProjectConfiguration.class.php
 
+``` php
 class ProjectConfiguration extends sfProjectConfiguration
 {
   public function setup()
@@ -29,9 +29,9 @@ class ProjectConfiguration extends sfProjectConfiguration
 ```	
 
 ### Activate sfRemoteIPSecurityFilter
-``` yaml
-// config/filter.yml
+> config/filter.yml
 
+``` yaml
 rendering: ~
 security:  ~
 
