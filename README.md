@@ -12,9 +12,9 @@ This plugin adds remote IP-filtering to symfony's security context.
 
     svn checkout http://svn.github.com/toaotc/sfRemoteIPSecurityFilterPlugin.git plugins/sfRemoteIPSecurityFilterPlugin
 
-## Configuration
+## How to…
 
-### Enable the plugin
+### …enable the plugin
 > config/ProjectConfiguration.class.php
 
 ``` php
@@ -28,7 +28,8 @@ class ProjectConfiguration extends sfProjectConfiguration
 }
 ```	
 
-### Activate sfRemoteIPSecurityFilter
+
+### …activate sfRemoteIPSecurityFilter
 > config/filter.yml
 
 ``` yaml
@@ -41,4 +42,13 @@ security_ip:
 cache:     ~
 execution: ~
 
+```
+
+### …use
+> app/your_app/config/security.yml
+> app/your_app/modules/your_module/config/security.yml
+``` yaml
+all:
+  addresses:
+    - 127.0.0.1
 ```
