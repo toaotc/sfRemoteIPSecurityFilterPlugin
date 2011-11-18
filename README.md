@@ -47,6 +47,7 @@ execution: ~
 ### …use
 > app/your_app/config/security.yml
 > app/your_app/modules/your_module/config/security.yml
+
 ``` yaml
 all:
   addresses:
